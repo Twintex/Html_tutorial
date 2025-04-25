@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK</title>
+</head>
+<body>
+
+    <h1>JavaScript Object Constructor</h1>
+
+    <p>MY BANK</p>
+
+<p id="unionbank"></p>
+<p id="firstbank"></p>
+<p id="GTbank"></p>
+<p id="Accessbank"></p>
+<p id="fidelitybank"></p>
+
+<script>
+
+function Banks(name, responsibility, staff, building) {
+  this.bankName = name;
+  this.bankTools = responsibility;
+  this.bankWorkers = staff;
+  this.bankBuiding = building;
+//   this.fullBank = function() {
+//     return this.bankSafe + " " + this.bankTools
+// };
+}
+
+
+const myUnionbank = new Banks("Union Bank", "operations", "driver", "story building");
+
+document.getElementById("unionbank").innerHTML =
+"My Bank have " + myUnionbank.bankWorkers
+
+const myFirstbank = new Banks("First Bank", "cash", "cashier", "bungalow");
+
+document.getElementById("firstbank").innerHTML = 
+"My bank have a" + " " + myFirstbank.bankTools
+
+
+const myGTbank = new Banks("GT bank", "Customer Service", "customer care", "skyscrapper");
+
+document.getElementById("GTbank").innerHTML = 
+"My bank have" + " " + myGTbank.bankBuiding
+
+const myAccessbank = new Banks("Access bank", "sercurity", "security officer", "security building");
+
+document.getElementById("Accessbank").innerHTML = 
+"My bank is" + " " + myAccessbank.bankName
+
+
+const myFidelitybank = new Banks("Fidelity bank", "cleaning", "cleaner", "staffroom");
+
+document.getElementById("fidelitybank").innerHTML = 
+"My bank have a" + " " + myFidelitybank.bankWorkers
+
+myAccessbank.changebank = function (blue) {
+    this.bankcolor = blue;
+}
+myAccessbank.changebank("Union bank");
+document.getElementById(unionbank).innerHTML = "My new bank is"  + myAccessbank.changebank;
+
+// const myAccessbank = new Banks("Access bank", "Management Staff", "BDM", "Management Room")
+// document.getElementById("Accessbank").innerHTML = "The BDM is a " + myAccessbank.bankWorkers + "Management Staff" + myAccessbank.bankBuiding;
+
+consor.console.log(true&&true);
+
+</script>
+    
+</body>
+</html>

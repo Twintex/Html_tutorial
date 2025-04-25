@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(true&&true)
+        console.log(6<4&&8>10)
+        console.log(!(9<5))
+
+        function call(name){
+            return "Hello," + name + "!"
+        }
+        console.log(call("Tony"));
+
+        let age= 18
+        if (age<=15){
+            console.log("You are an adult");
+        }
+        else {
+           console.log ("You are a minor");
+        }
+
+        for (let h=10; h<=20; h++)
+        {
+        console.log("Number: " + h)
+    }
+
+    let fruits = [
+        "Water melon", "Cucumba", "Pear", "Mango", "Carrot", "Avacado pear"
+    ];
+    for (let fruit of fruits) {
+        console.log("Fruit: " + fruit)
+    }
+    // console.log(fruits[0])
+
+    const person = {
+        Name : "John", 
+        lastName : "Doe",
+        age: 56,
+        Nationality : "African",
+        Color : "Dark"
+
+    };
+    for (let key in person){
+        if (person.hasOwnProperty(key)){
+            console.log(key + " : " + person[key]);
+        }
+    }
+
+    function changeText(){
+        document.getElementById("text").innerHTML = "Text Changed";
+    }
+
+    function validateForm(){
+        let name = document.getElementById("name").value;
+        if (name== ""){
+            alert("name must be filled");
+            return; false
+        }
+    }
+ </script>
+    <p id="text">
+         Click the button to change me!
+    </p>
+    <button onclick="changeText()">
+        Click me
+    </button>
+
+    <form onsubmit = "return validateForm()">
+        Name <input type="text", id="name">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

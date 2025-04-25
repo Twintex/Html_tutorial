@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <h1>My Second JavaScript</h1>
+    <p>Here we light up the bulb with JavaScript</p>
+
+    <script>
+        function Light(sw) {
+            var pic;
+            if (sw ==0) {
+                pic = "Assets/Images/41931.jpg"
+            }
+            else {
+                pic = "Assets/Images/energy-4233_256.gif"
+            }
+
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+    <img id="myImage" src="Assets/Images/41931.jpg" alt="An Image Of a Bulb" width="120px" height="220px">
+
+    <p>
+        <button type="button" onclick="Light(1)">
+            Light On
+        </button>
+
+        <button type="button" onclick="Light(0)">
+            Light Off
+        </button>
+    </p>
+    
+</body>
+</html>

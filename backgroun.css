@@ -1,0 +1,19 @@
+body{
+    background-image: url('./Assets/Images/fruits.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+p{
+    color: hsl(0, 86%, 50%);
+    text-align: center;
+    padding: 20px;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 30 17;
+
+}

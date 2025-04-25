@@ -1,0 +1,28 @@
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 40px;
+    /* border-style: none; */
+    border-color: red;
+    padding: 10px;
+    margin: 50px;
+}
+body{
+    font-size: medium;
+}
+th, td {
+    background-color: powderblue;
+    border-radius: 20px;
+    border-color: red;
+
+}
+h2{
+    text-align: center;
+}
+div {
+    background-color: #FFF4A3;
+    margin: auto;
+    width: 300px;
+}
+

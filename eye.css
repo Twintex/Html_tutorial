@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: black;
+}
+
+body {
+    background-color: peachpuff;
+    font-family: 'Lucida Sans';
+}
+
+img {
+    width: 379px;
+    height: 400px;
+}
